@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        .Going2 {
+            display: inline-block;
+            margin: 2px 40px 10px 0;
+        }
+        .type {
+            display: inline-block;
+            margin: 2px 20px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h4>Booking Flight</h4>
+    <div class="detail">
+        <div class="Going2">
+            <form>
+                <label for="from">Flying from</label><br>
+                <select id="from" name="from">
+                    <option value="blank">------- from -------</option>
+                    <option value="bangkok">Bangkok</option>
+                    <option value="chiangmai">Chiang Mai</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="Going2">
+            <form>
+                <label for="to">To</label><br>
+                <select id="to" name="to">
+                    <option value="blank">-------- to --------</option>
+                    <option value="krabi">Krabi</option>
+                    <option value="phuket">Phuket</option>
+                </select>
+            </form>
+        </div><br>
+
+        <div class="Going2">
+            <form>
+                <label for="departing">Departing</label><br>
+                <input type="date" id="departing" name="departing">
+                </select>
+            </form>
+        </div>
+
+        <div class="Going2">
+            <form>
+                <label for="returning">Returning</label><br>
+                <input type="date" id="returning" name="returning">
+                </select>
+            </form>
+        </div><br>
+
+        <div class="type">
+            <form>
+                <label for="adult">Adult</label><br>
+                <input type="number" id="adult" name="adult">
+                </select>
+            </form>
+        </div>
+
+        <div class="type">
+            <form>
+                <label for="child">Child</label><br>
+                <input type="number" id="child" name="child">
+                </select>
+            </form>
+        </div>
+
+        <div class="type">
+            <form>
+                <label for="infant">Infant</label><br>
+                <input type="number" id="infant" name="infant">
+                </select>
+            </form>
+        </div>
+
+        <div class="type">
+            <form>
+                <label for="currency">Currency</label><br>
+                <select id="currency">
+                    <option value="thb">THB</option>
+                    <option value="usd">USD</option>
+                </select>
+            </form>
+        </div><br>
+
+        <div class="button">
+            <from>
+                <input type="submit" id="search" value="SEARCH">
+            </from>
+        </div>
+
+    </div>
+</body>
+</html>
