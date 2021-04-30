@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deley</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        div.one {
+            position: relative;
+            width: 100px;
+            height: 50px;
+            background: rgb(0, 255, 0);
+            margin: 50px 0;
+            left: 50px;
+            animation: one 5s 1;
+        }
+        div.direction1 {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background: rgb(255, 251, 0);
+            margin: 150px 0px;
+            left: 50px;
+            animation: two 5s 2 1s;
+            animation-direction: twoernate;
+        }
+        div.direction2 {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background:rgb(255, 0, 0);
+            margin: 150px 0;
+            left: 50px;
+            animation: tree 5s 2 2s;
+            animation-direction: treeerse;
+        }
+
+        @keyframes one {
+            0% {left: 50px;}
+            25% {left: 100px; }
+            50% {left: 250px; }
+            75% {left: 150; }
+            100% {left: 50px;}
+
+        }
+        @keyframes two {
+            0% {left: 50px; top: 0;}
+            25% {left: 250px; top: 0;}
+            50% {left: 250px; top: 100px;}
+            75% {left: 50px; top: 100px;}
+            100% {left: 50px; top: 0;}
+        }
+        @keyframes tree {
+            0% {left: 50px; top: 0;}
+            25% {left: 250px; top: 0;}
+            50% {left: 250px; top: 100px;}
+            75% {left: 50px; top: 100px;}
+            100% {left: 50px; top: 0;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="direction1"></div>
+    <div class="direction2"></div>
+</body>
+</html>
