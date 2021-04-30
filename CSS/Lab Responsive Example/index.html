@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: verdana;
+        }
+        body {
+            background: url(https://www.pimclick.com/wp-content/uploads/2018/11/contact-banner.jpg);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        div:nth-child(1).fixed-content {
+            position: fixed;
+            left: 0;
+            color: tomato;
+        }
+        div:nth-child(2).fixed-content {
+            position: fixed;
+            right: 0;
+            color: tomato;
+            font-weight: bold;
+        }
+        .container-form {
+            display: inline-block;
+            background: whitesmoke;
+            border-radius: 10px;
+            height: auto;
+        }
+        
+        .grid-template {
+            display: grid;
+            
+        }
+        input {
+            display: inline-block;
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        input.input-content {
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        textarea {
+            border: 1px solid lightgray;
+            border-radius: 10px
+        }
+        a {
+            display: inline-block;
+            margin: 40px 0;
+            text-decoration: none;
+            color: tomato;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section-content-grid {
+            display: grid;
+        }
+        .section-content h1 {
+            font-size: 50px;
+            color: tomato;
+        }
+        
+
+        @media only screen and (min-width: 769px) {
+            body {
+                margin: 0 80px;
+                background-size: 100% 37%;
+            }
+            .container-form {
+                margin: 60px 0;
+                width: 800px;
+            }
+            .container-form h1 {
+                padding-top: 40px;
+            }
+            .grid-template {
+                grid-template-columns: repeat(2 ,1fr);
+                margin-top: 50px;
+            }
+            input {
+                padding: 12px 80px;
+                margin: 20px 0;
+            }
+            input.input-content {
+                padding: 12px 282px;
+            }
+            textarea {
+                padding: 200px 282px;
+                margin: 8px 0;
+            }
+            label {
+                display: inline-block;
+                position: absolute;
+                transform: translateX(-75%);
+                color: gray;
+            }
+            label.label-text {
+                display: inline-block;
+                position: absolute;
+                transform: translateX(-360px);
+                color: gray;
+            }
+            .text-header {
+            font-size: 50px;
+            }
+            .section-content-grid {
+            grid-template-columns: repeat(2 ,1fr);
+            margin: 60px 0;
+            grid-gap: 20px;
+            }
+            .section-content h1 {
+            font-size: 50px;
+            color: tomato;
+            }
+            
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+           body {
+                margin: 0 30px;
+                background-size: 100% auto;
+           }
+           .container-form {
+                margin: 40px 0;
+                width: auto;
+            }
+            .grid-template {
+                grid-template-columns: auto;
+                margin-top: 30px;
+            }
+            input {
+                padding: 10px 50px;
+                margin: 10px 0;
+            }
+            input.input-content {
+            padding: 6px auto;
+            }
+            textarea {
+                margin: 8px 0;
+            }
+            label {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            label.label-text {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            .text-header {
+            font-size: 30px;
+            }
+            .section-content-grid {
+            grid-template-columns: auto;
+            margin: 30px 0;
+            grid-gap: 10px;
+            }
+            .section-content h1 {
+            font-size: 30px;
+            color: tomato;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                background-size: 100% auto;
+            }
+            .container-form {
+                margin: 20px 0;
+                width: auto;
+            }
+            .grid-template {
+                grid-template-columns: auto;
+                margin-top: 10px;
+            }
+            input {
+                padding: 5px 15px;
+                margin: 5px 0;
+            }
+            label {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            label.label-text {
+                display: inline-block;
+                color: black;
+                font-size: 15px;
+            }
+            .text-header {
+            font-size: 30px;
+            }
+            .section-content-grid {
+            grid-template-columns: auto;
+            }
+            .section-content h1 {
+            font-size: 30px;
+            color: tomato;
+            }
+            
+        
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+        <div class="nav-content">
+            <nav>
+                <div class="fixed-content">
+                    <h1>P</h1>
+                </div>
+                <div class="fixed-content">
+                    <p>About</p>
+                </div>
+            </nav>
+        </div>
+        <div class="text-header">
+            <h1 style="color: black;">Pimclick</h1>
+            <h1 style="color: tomato;">creative digital agency</h1>
+        </div>
+    <form class="container-form">
+        <h1>Contact Us <span style="color: tomato;">today</span></h1>
+        <div class="grid-template">
+            <div>
+                
+                <label>Your Name (required)</label><br>
+                <input type="text">
+            </div>
+            <div>
+                <label>Your Email (required)</label><br>
+                <input type="text">
+            </div>
+        </div>
+
+            <div>
+                <label class="label-text">Subject</label><br>
+                <input class="input-content" type="text">
+                <br>
+                <label class="label-text">Your Massage</label><br>
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+            </div>
+            <h2><a href="#">SEND</a></h2>
+    </form>
+    <div class="container">
+            <div>
+                <p>Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
+            </div>
+            <br>
+                <img src="https://www.screenalicious.com/wp-content/uploads/2020/06/fighting-fish-wallpaper-649x365.jpg" alt=""><br>
+
+        <div class="section-content-grid">  
+            <div class="section-content">
+                <h1>Digital
+                    Strategy</h1>
+                <p>Business Intelligence
+                    SEO – Search Engine Optimization
+                    SEM streategy
+                    Digital Content
+                    Branding Design
+                    UX & UI Design
+                    Product Prototype</p>
+            </div>
+            <div class="section-content">
+                <h1>E-Marketing</h1>
+                <p>BCampaigns management
+                    Market research
+                    User analysis
+                    Brand activation
+                    E-Commerce Development
+                    Social Media strategy and
+                    optimisation
+                    Advocacy & Influencer</p>
+            </div>
+            <div class="section-content">
+                <h1>Graphic Design</h1>
+                <p>Creative Art direction
+                    Branding & Identity
+                    3D modeling / Animation
+                    UI/UX design
+                    Prints & Signaletics
+                    Visual storytelling
+                    Layouting & Infographics
+                    Typography</p>
+            </div>
+            <div class="section-content">
+                <h1>Video
+                    Production</h1>
+                <p>Campaigns management
+                    Scripting / Story Boarding
+                    Filming
+                    Editing/Grading
+                    Motion Design
+                    Sound design</p>
+            </div>
+        </div>
+    </div>          
+</body>
+</html>
